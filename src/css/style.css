@@ -16,3 +16,5 @@ a {
 ul {
     list-style: none;
 }
+.attribution {text-align: center;}
+.attribution a {color: hsl(228, 45%, 44%);}
