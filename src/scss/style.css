@@ -25,4 +25,39 @@ a {
 ul {
   list-style: none;
 }
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__menu span {
+  display: block;
+  width: 2.6rem;
+  height: .2rem;
+  background-color: #2e314d;
+}
+
+.header__menu span:not(:last-child) {
+  margin-bottom: .3rem;
+}
 /*# sourceMappingURL=style.css.map */
