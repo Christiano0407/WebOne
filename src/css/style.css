@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+:root {
+    --clr-one:#fff;
+    --clr-two:#000;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
