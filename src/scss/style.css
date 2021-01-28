@@ -26,7 +26,6 @@ ul {
 
 a, a:visited, a:hover {
   text-decoration: none;
-  color: #9698a6;
 }
 
 .flex {
@@ -64,6 +63,18 @@ button, .button {
   font-weight: 400;
 }
 
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
 .header nav {
   padding: 2.4rem;
 }
@@ -79,7 +90,20 @@ button, .button {
   margin-bottom: .3rem;
 }
 
-.header__link a {
+.header__links a {
+  position: relative;
   font-size: 0.875rem;
+  color: #9698a6;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+.header__links a:not(:last-child) {
+  margin-right: 3.2rem;
+}
+
+.header__links__cta {
+  font-size: 0.875rem;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

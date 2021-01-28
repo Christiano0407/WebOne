@@ -22,9 +22,20 @@
       }
     }
 
-    &__link {
+    &__links {
         a {
+            position: relative;
             font-size: $font-sm;
+            color: $grayishBlue;
+            transition: color 300ms ease-in-out;
+        
+        &:not(:last-child){
+            margin-right: 3.2rem;
         }
     }
+    &__cta {
+        font-size: $font-sm;
+        color: $white;
+    }
+  }
 }
