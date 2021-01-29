@@ -1,12 +1,13 @@
 .header {
 
     nav {
-        padding: 2.4rem;
+        padding: 1.0625rem  1.5rem;
     }
 
     &__logo {
       img {
-
+        width: 8.8125rem;
+        height: 1.375rem;
       }
     }
     &__menu {
@@ -23,6 +24,7 @@
     }
 
     &__links {
+        /* border: .1rem solid red; */
         a {
             position: relative;
             font-size: $font-sm;
@@ -31,6 +33,19 @@
         
         &:not(:last-child){
             margin-right: 3.2rem;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            height: .3rem;
+            background: $limeGreen;
+            left: 0;
+            right: 0;
+            bottom: -1rem;
+        }
+        &:hover {
+            color:$darkblue;
         }
     }
     &__cta {

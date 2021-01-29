@@ -76,7 +76,12 @@ button, .button {
 }
 
 .header nav {
-  padding: 2.4rem;
+  padding: 1.0625rem  1.5rem;
+}
+
+.header__logo img {
+  width: 8.8125rem;
+  height: 1.375rem;
 }
 
 .header__menu span {
@@ -90,6 +95,10 @@ button, .button {
   margin-bottom: .3rem;
 }
 
+.header__links {
+  /* border: .1rem solid red; */
+}
+
 .header__links a {
   position: relative;
   font-size: 0.875rem;
@@ -100,6 +109,21 @@ button, .button {
 
 .header__links a:not(:last-child) {
   margin-right: 3.2rem;
+}
+
+.header__links a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: .3rem;
+  background: #31d35c;
+  left: 0;
+  right: 0;
+  bottom: -1rem;
+}
+
+.header__links a:hover {
+  color: #2e314d;
 }
 
 .header__links__cta {
