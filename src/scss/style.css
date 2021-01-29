@@ -53,7 +53,7 @@ a, a:visited, a:hover {
 }
 
 button, .button {
-  padding: 1rem 1.075rem;
+  padding: 0.875rem 2.1875rem;
   border-radius: 5rem;
   cursor: pointer;
   background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
@@ -97,6 +97,15 @@ button, .button {
 
 .header__links {
   /* border: .1rem solid red; */
+  /* &__cta {
+        font-size: $font-sm;
+        color: $white;
+        transition: opacity 300ms ease-in-out;
+
+        &:hover {
+            opacity: 0.75;
+        }
+    } */
 }
 
 .header__links a {
@@ -119,15 +128,19 @@ button, .button {
   background: #31d35c;
   left: 0;
   right: 0;
-  bottom: -1rem;
+  bottom: -1.5rem;
+  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
 }
 
 .header__links a:hover {
   color: #2e314d;
 }
 
-.header__links__cta {
-  font-size: 0.875rem;
-  color: white;
+.header__links a:hover::before {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */

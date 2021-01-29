@@ -38,8 +38,8 @@ a, a:visited, a:hover {
     }
 }
 //button {
-button,.button {
-    padding: 1rem 1.075rem;
+button, .button {
+    padding: 0.875rem 2.1875rem;
     border-radius: 5rem;
     cursor: pointer;
     background: linear-gradient(to right, $limeGreen, $brightCyan);
