@@ -89,10 +89,28 @@ button, .button {
   width: 2.6rem;
   height: .2rem;
   background-color: #2e314d;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
 }
 
 .header__menu span:not(:last-child) {
-  margin-bottom: .3rem;
+  margin-bottom: .5rem;
+}
+
+.header__menu.open > span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header__menu.open > span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__menu.open > span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .header__links {
