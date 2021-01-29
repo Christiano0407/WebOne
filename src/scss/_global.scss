@@ -15,6 +15,14 @@ body {
     font-style: normal;
     font-size: $font-med;
     color: $grayishBlue;
+
+    @include breakpoint-up(large) {
+        font-size: $font-med;
+    }
+
+    &.noscroll {
+        overflow: hidden;
+    }
 }
 ul {
     list-style: none;
