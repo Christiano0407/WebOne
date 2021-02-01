@@ -290,6 +290,10 @@ button, .button {
   font-size: 1.6rem;
 }
 
+.header__menu a:hover {
+  color: #dadada;
+}
+
 .header__links a {
   position: relative;
   font-size: 0.875rem;
